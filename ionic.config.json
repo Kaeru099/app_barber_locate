@@ -1,0 +1,7 @@
+{
+  "name": "barber_locate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
