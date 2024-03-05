@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+  <div id="flecha-atras">
+    <ion-icon name="arrow-back-sharp"></ion-icon>
+  </div>
+  <div id="contenedor">
+
+    <div id="logo">
+      <ion-img src="assets/img/logo3.png" alt="Logo Barber Locate"></ion-img>
+    </div>
+
+    <div id="campos">
+
+      <ion-input type="number" placeholder="Documento de identidad" maxlength="15" pattern="[0-9]*"></ion-input>
+      
+      <ion-input type="date"></ion-input>
+      
+      
+      <ion-input type="text" placeholder="Contraseña" pattern="^\S*$"></ion-input>
+      
+      
+      <ion-input type="text" placeholder="Confirmar contraseña" pattern="^\S*$"></ion-input>
+      
+    </div>
+
+    <ion-button>Restaurar</ion-button>
+  </div>
+</ion-content>
