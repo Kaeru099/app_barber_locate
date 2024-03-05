@@ -1,17 +1,54 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
+  
+    
+    <div class="shape">
+    </div>
+    <ion-fab class="fab1" vertical="top" horizontal="end" edge>
+      <ion-fab-button class="masopciones" size="small" style="--background: #cc6c3A;">
+        <ion-icon  name="chevron-down-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="alinFoto">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+    <ion-fab-button class="agregarfoto" size="small" style="--background: #cc6c3A;">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+   <p class="nomperfil">Mauricio posada</p>
+  </div>
+
+  <ion-button id="editarinfo"><ion-icon name="create-outline"></ion-icon></ion-button>
+  <ion-grid class="infoperfil">
+    <ion-row >
+      <ion-col size="8">
+        <ion-icon class="iconos" name="diamond-outline"></ion-icon>
+        <ion-input class="inform"  label-placement="floating" fill="outline"  value="Cliente"></ion-input>
+      </ion-col>
+      
+      <ion-col size="8">
+        <ion-icon  class="iconos" name="business-outline"></ion-icon>
+        <ion-input  class="inform" type="floating" label-placement="floating" fill="outline" value="Albergue"></ion-input>
+      </ion-col>
+      
+      <ion-col size="8">
+        <ion-icon  class="iconos" name="attach-outline"></ion-icon>
+        <ion-input class="inform" type="floating" label-placement="floating" fill="outline" value="#cra 3b 03-06"></ion-input>
+      </ion-col>
+    
+
+      <ion-col size="8">
+        <ion-icon  class="iconos" name="call-outline"></ion-icon>
+        <ion-input class="inform" type="number" label-placement="floating" fill="outline" value="3156295111"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+    
