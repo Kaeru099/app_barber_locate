@@ -1,17 +1,74 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+  <div  class="contenedor">
+    <div class="shape"></div>
+
+  <ion-fab slot="fixed" vertical="top" horizontal="end" >
+    <ion-fab-button class="butonfab">
+      <ion-icon name="chevron-down-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list  class="opciones"  side="bottom">
+ 
+      <ion-button class="botonopciones">
+        <p>Barberos</p>
+      </ion-button>
+
+      <ion-button class="botonopciones">
+      <p>Horarios</p>
+      </ion-button>
+
+      <ion-button class="botonopciones">
+        <p>Fechas</p>
+      </ion-button>
+
+      <ion-button class="botonopciones">
+        <p>Servicios</p>
+      </ion-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  
+  <div class="alinFoto">
+
+    <ion-fab-button class="agregarfoto" size="small" style="--background: #cc6c3A;">
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+   <p class="nomperfil">Mauricio posada</p>
+  </div>
+
+  <ion-button id="editarinfo"><ion-icon id="editaricon" name="create-outline"></ion-icon></ion-button>
+  
+  <ion-grid class="infoperfil">
+    <ion-row >
+      <ion-col size="8">
+        <ion-icon class="iconos" name="diamond-outline"></ion-icon>
+        <p class="inform">Cliente</p>
+      </ion-col>
+      
+      <ion-col size="8">
+        <ion-icon  class="iconos" name="business-outline"></ion-icon>
+        <p class="inform">Albergue</p>
+      </ion-col>
+      
+      <ion-col size="8">
+        <ion-icon  class="iconos" name="attach-outline"></ion-icon>
+        <p class="inform">#cra 3b 03-06</p>
+      </ion-col>
+    
+
+      <ion-col size="8">
+        <ion-icon  class="iconos" name="call-outline"></ion-icon>
+        <p class="inform">3117175899</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+  
+    

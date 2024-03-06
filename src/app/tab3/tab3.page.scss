@@ -1,0 +1,88 @@
+ion-content{
+ --background:#2f2519;
+ z-index: -1;
+}
+.shape {
+  background-color: #eda05a;
+  height: 200px;
+  width: 150%;
+  margin-left: 50px;
+  position: absolute;
+  top: -80px;
+  box-shadow: 0 2px 15px #000;
+  transform: rotate(26deg);
+  z-index: 0;
+}
+.contenedor{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2f2519;
+}
+
+
+
+.botonopciones{
+  margin-right: 130%;
+  width: 150px;
+  color: antiquewhite;
+  z-index: 3;
+  box-shadow: 0 20px 15px #000;
+}
+
+
+ion-avatar {
+    position: relative;
+    margin-top: 13px;
+    width: 190px;
+    height: 190px;
+    z-index: 2;
+}
+
+
+  .infoperfil {
+    color: antiquewhite;
+    display: flex;
+    font-size: 1.6rem;
+    text-align: left;
+  }
+  
+  .inform{
+    width: 190px;
+    color:antiquewhite;
+    font-size: 1.8rem;
+    position: absolute;
+  }
+  
+  .iconos{
+   font-size: 2.10rem;
+   color: #cc6c3A;
+  }
+
+  .agregarfoto {
+    position: absolute;
+    z-index: 3;
+  }
+
+  .nomperfil{
+    color: antiquewhite;
+    font-size: 1.8rem;
+  }
+
+  #editarinfo{
+    color: antiquewhite;
+    position: relative;
+    left: 40%;
+    background-color: #cc6c3A;
+    font-size: 0.5rem;
+  }
+
+  #editaricon{
+    font-size: 1.7rem;
+  }
+
+
+
