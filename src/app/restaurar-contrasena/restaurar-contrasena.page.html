@@ -13,20 +13,24 @@
       <ion-img src="assets/img/logo3.png" alt="Logo Barber Locate"></ion-img>
     </div>
 
-    <div id="campos">
+    <form [formGroup]="form" (submit)="onSubmit()" action="">
+      <div id="campos">
 
-      <ion-input type="number" placeholder="Documento de identidad" maxlength="15" pattern="[0-9]*"></ion-input>
-      
-      <ion-input type="date"></ion-input>
-      
-      
-      <ion-input type="text" placeholder="Contraseña" pattern="^\S*$"></ion-input>
-      
-      
-      <ion-input type="text" placeholder="Confirmar contraseña" pattern="^\S*$"></ion-input>
-      
-    </div>
+        <ion-input type="number" placeholder="Documento de identidad" maxlength="15" pattern="[0-9]*"></ion-input>
+        
+        <ion-input type="date"></ion-input>
+        
+        
+        <ion-input type="text" placeholder="Contraseña" pattern="^\S*$" formControlName="palabra_u"></ion-input>
+        
+        
+        <ion-input type="text" placeholder="Confirmar contraseña" pattern="^\S*$"></ion-input>
 
-    <ion-button>Restaurar</ion-button>
+      </div>
+
+      <ion-button type="submit" [disabled]="form.invalid">Restaurar</ion-button>
+    </form>
+      
+
   </div>
 </ion-content>
