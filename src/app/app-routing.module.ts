@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'restaurar-contrasena',
+    loadChildren: () => import('./restaurar-contrasena/restaurar-contrasena.module').then( m => m.RestaurarContrasenaPageModule)
   }
 ];
 @NgModule({
