@@ -1,17 +1,35 @@
-<ion-header [translucent]="true">
-  
-    
-    <div class="shape">
-    </div>
-    <ion-fab class="fab1" vertical="top" horizontal="end" edge>
-      <ion-fab-button class="masopciones" size="small" style="--background: #cc6c3A;">
-        <ion-icon  name="chevron-down-outline"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-  
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
+
+  <div  class="contenedor">
+    <div class="shape"></div>
+
+  <ion-fab slot="fixed" vertical="top" horizontal="end" >
+    <ion-fab-button class="butonfab">
+      <ion-icon name="chevron-down-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list  class="opciones"  side="bottom">
+ 
+      <ion-button class="botonopciones">
+        <p>Barberos</p>
+      </ion-button>
+
+      <ion-button class="botonopciones">
+      <p>Horarios</p>
+      </ion-button>
+
+      <ion-button class="botonopciones">
+        <p>Fechas</p>
+      </ion-button>
+
+      <ion-button class="botonopciones">
+        <p>Servicios</p>
+      </ion-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  
   <div class="alinFoto">
 
     <ion-fab-button class="agregarfoto" size="small" style="--background: #cc6c3A;">
@@ -24,31 +42,33 @@
    <p class="nomperfil">Mauricio posada</p>
   </div>
 
-  <ion-button id="editarinfo"><ion-icon name="create-outline"></ion-icon></ion-button>
+  <ion-button id="editarinfo"><ion-icon id="editaricon" name="create-outline"></ion-icon></ion-button>
+  
   <ion-grid class="infoperfil">
     <ion-row >
       <ion-col size="8">
         <ion-icon class="iconos" name="diamond-outline"></ion-icon>
-        <ion-input class="inform"  label-placement="floating" fill="outline"  value="Cliente"></ion-input>
+        <p class="inform">Cliente</p>
       </ion-col>
       
       <ion-col size="8">
         <ion-icon  class="iconos" name="business-outline"></ion-icon>
-        <ion-input  class="inform" type="floating" label-placement="floating" fill="outline" value="Albergue"></ion-input>
+        <p class="inform">Albergue</p>
       </ion-col>
       
       <ion-col size="8">
         <ion-icon  class="iconos" name="attach-outline"></ion-icon>
-        <ion-input class="inform" type="floating" label-placement="floating" fill="outline" value="#cra 3b 03-06"></ion-input>
+        <p class="inform">#cra 3b 03-06</p>
       </ion-col>
     
 
       <ion-col size="8">
         <ion-icon  class="iconos" name="call-outline"></ion-icon>
-        <ion-input class="inform" type="number" label-placement="floating" fill="outline" value="3156295111"></ion-input>
+        <p class="inform">3117175899</p>
       </ion-col>
     </ion-row>
   </ion-grid>
+</div>
 
   
     
