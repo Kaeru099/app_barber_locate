@@ -2,7 +2,8 @@ ion-button {
     --background: #dd5025;
     border: transparent;
     color: #fff6e6;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 600;
     margin-top: 40px;
     width: 130px;
 }
@@ -54,5 +55,18 @@ div#flecha-atras {
 
 div#logo {
     width: 150px;
+    margin-bottom: 20px;
+}
+
+form {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+@media screen and (min-height: 700px){
+    div#logo {
+        margin-bottom: 80px;
+    }
 }
 
