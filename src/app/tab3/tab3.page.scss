@@ -14,6 +14,7 @@ ion-content{
   z-index: 0;
 }
 .contenedor{
+
   align-items: center;
   display: flex;
   justify-content: center;
@@ -44,22 +45,30 @@ ion-avatar {
 
 
   .infoperfil {
+    
+    position: relative;
+    text-align: left;
     color: antiquewhite;
     display: flex;
     font-size: 1.6rem;
-    text-align: left;
+    left: 30%;
+    
+    
   }
   
   .inform{
-    width: 190px;
-    color:antiquewhite;
-    font-size: 1.8rem;
-    position: absolute;
+   position: relative;
+   right: 50px;
+   
+   
   }
   
   .iconos{
-   font-size: 2.10rem;
+    position: relative;
+   font-size: 2.40rem;
    color: #cc6c3A;
+   top: 23px;
+
   }
 
   .agregarfoto {
