@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'restaurar-contrasena',
     loadChildren: () => import('./restaurar-contrasena/restaurar-contrasena.module').then( m => m.RestaurarContrasenaPageModule)
+  },  {
+    path: 'escoger',
+    loadChildren: () => import('./escoger/escoger.module').then( m => m.EscogerPageModule)
   }
+
 ];
 @NgModule({
   imports: [

@@ -1,0 +1,38 @@
+ion-modal {
+    --height: 80%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px #cc6c3a,  #cc6c3a;
+  }
+  
+  ion-modal::part(backdrop) {
+    background: #eda05a;
+    opacity: 1;
+  }
+  
+   ion-toolbar {
+    --background: #413423;
+    --color: white;
+  }
+
+  ion-checkbox {
+    --size: 32px;
+    --checkbox-background-checked: cc6c3a;
+  }
+  
+  ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid cc6c3a;
+  }
+
+
+  .item-perfil-barberos{
+    font-size: 50px;
+    --background:  #2f2519;
+  }
+
+  .foto-perfil-avatar{
+    height: 90px;
+    margin: 0;
+    padding: 10px;
+    width: 101px;
+  }
