@@ -1,0 +1,27 @@
+ion-modal {
+    --height: 80%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background:#eda05a;
+    --color: white;
+  }
+
+  .item-servis{
+    --background: #413423;
+    border: 60px;
+    
+  }
+
+  .titlo-servi{
+    text-align: center;
+    color: #eda05a;
+  }
+

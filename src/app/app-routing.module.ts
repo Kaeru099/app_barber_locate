@@ -12,6 +12,10 @@ const routes: Routes = [
   },  {
     path: 'escoger',
     loadChildren: () => import('./escoger/escoger.module').then( m => m.EscogerPageModule)
+  },
+  {
+    path: 'agendamiento',
+    loadChildren: () => import('./agendamiento/agendamiento.module').then( m => m.AgendamientoPageModule)
   }
 
 ];

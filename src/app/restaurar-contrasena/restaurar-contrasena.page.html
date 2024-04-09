@@ -16,19 +16,19 @@
     <form [formGroup]="form" (submit)="onSubmit()" action="">
       <div id="campos">
 
-        <ion-input type="number" placeholder="Documento de identidad" maxlength="15" pattern="[0-9]*"></ion-input>
+        <ion-input type="text" placeholder="Documento de identidad" maxlength="15" pattern="[0-9]*" formControlName="cedula"></ion-input>
         
-        <ion-input type="date"></ion-input>
-        
-        
-        <ion-input type="text" placeholder="Contraseña" pattern="^\S*$" formControlName="palabra_u"></ion-input>
+        <ion-input type="date" formControlName="fecha_nac"></ion-input>
         
         
-        <ion-input type="text" placeholder="Confirmar contraseña" pattern="^\S*$"></ion-input>
+        <ion-input type="password" placeholder="Contraseña" pattern="^\S*$" formControlName="palabra" (keypress)="quitarEspacio($event)"></ion-input>
+        
+        
+        <ion-input type="password" placeholder="Confirmar contraseña" pattern="^\S*$" formControlName="confirmar_palabra" (keypress)="quitarEspacio($event)"></ion-input>
 
       </div>
 
-      <ion-button type="submit" [disabled]="form.invalid">Restaurar</ion-button>
+      <ion-button expand="block" type="submit" [disabled]="form.invalid || form.hasError('passwordMismatch')" (click)="contrasenaActualizada('top'); contrasenaFallida('top')">Restaurar</ion-button>
     </form>
       
 

@@ -1,0 +1,49 @@
+
+  
+<div class="servicios-clien">
+
+  <h1 class="titlo-servi"> Escoge un servicio</h1>
+
+<ion-list class="lista-servis">
+  <ion-item class="item-servis">
+    <ion-label>Corte de cabello</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  
+  
+  <ion-item class="item-servis">
+    <ion-checkbox>lavado cabello</ion-checkbox>
+  </ion-item>
+  
+  
+  <ion-item class="item-servis">
+    <ion-label>Arreglo de barba</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  
+  
+  <ion-item class="item-servis">
+    <ion-checkbox>Limpieza fácial</ion-checkbox>
+  </ion-item>
+</ion-list>
+
+
+
+ <ion-content class="ion-padding">
+  <ion-button id="open-modal" expand="block"> Fecha y Hora</ion-button>
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+        <ion-toolbar>
+          <ion-title>Modal</ion-title>
+          
+        </ion-toolbar>
+        <ion-datetime [showDefaultButtons]="true"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+
+  <ion-button class="btn-conti">Continuar</ion-button>
+
+</ion-content>
+
+
+

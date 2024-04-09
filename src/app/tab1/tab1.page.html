@@ -1,17 +1,41 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <main>
+    <h2 id="tlo">Barberos asociados</h2>
+    <button id="btn-agregar-barbero" class="esconder" type="button">Agregar barbero</button>
+    <section id="info-barberos">
+        <div class="tarjeta-barbero">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+            <figure class="contenedor-img-barbero">
+                <img class="img-barbero" src="../../assets/img/icono-usuario.png" alt="icono usuario">
+            </figure>
+
+            <div class="contenedor-datos-barbero">
+                <p class="nom-barbero">Juan Esteban Dominguez Rivera</p>
+                <button class="btn-actividad-barbero" type="button">Ver actividad</button>
+            </div>
+            
+            <button class="btn-eliminar-barbero esconder" type="button"><ion-icon name="trash-sharp"></ion-icon></button>
+
+        </div>
+
+        <div class="tarjeta-barbero">
+
+            <figure class="contenedor-img-barbero">
+                <img class="img-barbero" src="../../assets/img/icono-usuario.png" alt="icono usuario">
+            </figure>
+
+            <div class="contenedor-datos-barbero">
+                <p class="nom-barbero">Juan Esteban Dominguez Rivera</p>
+                <button class="btn-actividad-barbero" type="button">Ver actividad</button>
+            </div>
+
+            <button class="btn-eliminar-barbero esconder" type="button"><ion-icon name="trash-sharp"></ion-icon></button>
+
+        </div>
+    </section>
+    <button id="btn-administrar-barberos" type="button">Administrar barberos</button>
+</main>
 </ion-content>
