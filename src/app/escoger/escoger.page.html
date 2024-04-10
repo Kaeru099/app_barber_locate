@@ -1,91 +1,45 @@
 
-        <ion-content>
-          <ion-toolbar>
-            <ion-title>Elegir Barbero</ion-title>
-          </ion-toolbar>
-          <ion-list>
-
-            <ion-item class="item-perfil-barberos">
-              <ion-avatar slot="start" class="foto-perfil-avatar">
-                <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
-              </ion-avatar>
-              <ion-label>
-                <h2>Connor Smith</h2>
-                <ion-button class="btn-elegir-barbero">Elegir</ion-button>
-                <ion-button class="btn-ver-barbero">Ver perfil</ion-button>
-              </ion-label>
-            </ion-item>
-
-            <ion-item  class="item-perfil-barberos">
-              <ion-avatar slot="start" class="foto-perfil-avatar">
-                <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
-              </ion-avatar>
-              <ion-label>
-                <h2>Daniel Smith</h2>
-                <ion-button class="btn-elegir-barbero">Elegir</ion-button>
-                <ion-button class="btn-ver-barbero">Ver perfil</ion-button>
-              </ion-label>
-            </ion-item>
-
-            <ion-item  class="item-perfil-barberos">
-              <ion-avatar slot="start" class="foto-perfil-avatar">
-                <ion-img src="https://i.pravatar.cc/300?u=d"></ion-img>
-              </ion-avatar>
-              <ion-label>
-                <h2>Greg Smith</h2>
-                <ion-button class="btn-elegir-barbero">Elegir</ion-button>
-                <ion-button class="btn-ver-barbero">Ver perfil</ion-button>
-              </ion-label>
-            </ion-item>
-
-            <ion-item class="item-perfil-barberos">
-              <ion-avatar slot="start" class="foto-perfil-avatar">
-                <ion-img src="https://i.pravatar.cc/300?u=e"></ion-img>
-              </ion-avatar>
-              <ion-label>
-                <h2 class="nom-barbero">Zoey Smith</h2>
-                <ion-button class="btn-elegir-barbero">Elegir</ion-button>
-                <ion-button class="btn-ver-barbero">Ver perfil</ion-button>
-              </ion-label>
-            </ion-item>
-
-            <ion-item  class="item-perfil-barberos">
-              <ion-avatar slot="start" class="foto-perfil-avatar">
-                <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
-              </ion-avatar>
-              <ion-label>
-                <h2>Connor Smith</h2>
-                <ion-button class="btn-elegir-barbero">Elegir</ion-button>
-                <ion-button class="btn-ver-barbero">Ver perfil</ion-button>
-              </ion-label>
-            </ion-item>
-
-            <ion-item  class="item-perfil-barberos">
-              <ion-avatar slot="start" class="foto-perfil-avatar">
-                <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
-              </ion-avatar>
-              <ion-label>
-                <h2>Connor Smith</h2>
-                <ion-button class="btn-elegir-barbero">Elegir</ion-button>
-                <ion-button class="btn-ver-barbero">Ver perfil</ion-button>
-              </ion-label>
-            </ion-item>
-
-            <ion-item  class="item-perfil-barberos">
-              <ion-avatar slot="start" class="foto-perfil-avatar">
-                <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
-              </ion-avatar>
-              <ion-label>
-                <h2>Connor Smith</h2>
-                <ion-button class="btn-elegir-barbero">Elegir</ion-button>
-                <ion-button class="btn-ver-barbero">Ver perfil</ion-button>
-              </ion-label>
-            </ion-item>
-          </ion-list>
-         
-  </ion-content>
-
 
   
-  <!--MODAL ELEGIR HORA Y FECHA  -->
+<ion-content [fullscreen]="true">
+  <main>
+    <h2 id="tlo">Barberos disponibles</h2>
+   
+    <section id="info-barberos">
+        <div class="tarjeta-barbero">
 
+            <figure class="contenedor-img-barbero">
+                <img class="img-barbero" src="../../assets/img/icono-usuario.png" alt="icono usuario">
+            </figure>
+
+            <div class="contenedor-datos-barbero">
+                <p class="nom-barbero">BarberLocate</p>
+
+                <button class="btn-actividad-barbero" type="button">Agendar cita</button>
+
+                <button class="btn-ubicacion-barbero" type="button">ver ubicación</button>
+            </div>
+           
+        </div>
+
+        <div class="tarjeta-barbero">
+
+            <figure class="contenedor-img-barbero">
+                <img class="img-barbero" src="../../assets/img/icono-usuario.png" alt="icono usuario">
+            </figure>
+
+            <div class="contenedor-datos-barbero">
+                <p class="nom-barbero">Barberia valhala</p>
+                <button class="btn-actividad-barbero" type="button">Agendar cita</button>
+                <button class="btn-ubicacion-barbero" type="button">ver ubicación</button>
+            </div>
+
+          
+
+        </div>
+        
+    </section>
+   
+</main>
+</ion-content>
+  

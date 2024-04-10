@@ -1,7 +1,9 @@
 ion-modal {
-    --height: 80%;
+    --height: 78%;
+    --width: 90%;
     --border-radius: 16px;
     --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    background-color: #413423;
   }
   
   ion-modal::part(backdrop) {
@@ -12,16 +14,22 @@ ion-modal {
   ion-modal ion-toolbar {
     --background:#eda05a;
     --color: white;
+    text-align: center;
   }
 
   .item-servis{
     --background: #413423;
-    border: 60px;
-    
+    padding: 12px;
   }
 
   .titlo-servi{
     text-align: center;
     color: #eda05a;
+  }
+
+  .btn-conti{
+    position: absolute;
+    left: 60%;
+    bottom: 30%;
   }
 

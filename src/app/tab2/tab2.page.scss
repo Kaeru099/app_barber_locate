@@ -26,9 +26,6 @@ img {
     width: 100%;
 }
 
-ion-toolbar{
-    --background: #413423;
-}
 main {
     align-items: center;
     background-color: #2f2519;
@@ -36,7 +33,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 90vh;
+    min-height: 97vh;
     padding: 1em;
     position: relative;
 }

@@ -1,44 +1,129 @@
-ion-modal {
-    --height: 80%;
-    --border-radius: 4px;
-    --box-shadow: 0 10px 15px -3px #cc6c3a,  #cc6c3a;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
 
-  
-  ion-modal::part(backdrop) {
-    background: #eda05a;
-    opacity: 1;
-  }
-  
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
 
-  .foto-perfil{
-    --border-radius: 4;
-  }
-   ion-toolbar {
-    --background: #413423;
-    --color: white;
-  }
+a {
+    color: #fff6e6;
+}
 
-  ion-checkbox {
-    --size: 32px;
-    --checkbox-background-checked: cc6c3a;
-  }
-  
-  ion-checkbox::part(container) {
-    border-radius: 6px;
-    border: 2px solid cc6c3a;
-  }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    margin: 0 0 -4px 0;
+    padding: 0;
+    width: 100%;
+}
 
 
-  .item-perfil-barberos{
-    font-size: 50px;
-    --background:  #2f2519;
-  }
+main {
+    align-items: center;
+    background-color: #2f2519;
+    color: #fff6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 1em;
+    position: relative;
+}
 
-  .foto-perfil-avatar{
+/* ---------- Etiquetas HTML ---------- */
+
+h2#tlo {
+    color: #eda05a;
+    text-align: center;
+}
+
+section#info-barberos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+
+/* ---------- Clases ---------- */
+
+button.btn-actividad-barbero{
+    
+    background: #d35b22;
+    border: transparent;
+    border-radius: 4px;
+    color: #fff6e6;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 5px 5px;
+    margin: 10px;
+   
+}
+
+button.btn-ubicacion-barbero{
+    background: #d35b22;
+    border: transparent;
+    border-radius: 4px;
+    color: #fff6e6;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+
+
+div.contenedor-datos-barbero {
+    align-items: center;
+    display: inline-flexbox;
+    height: 100%;
+    justify-content: center;
+    text-align: start;
+    width: 210px;
+}
+
+figure.contenedor-img-barbero {
     height: 90px;
     margin: 0;
     padding: 10px;
     width: 101px;
+}
+
+img.img-barbero {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+p.nom-barbero {
+    line-height: 2;
+    margin-bottom: 13px;
+    padding: 0 10px 0 10px;
+}
+
+div.tarjeta-barbero {
+    align-items: center;
+    background-color: #413423;
     border-radius: 4px;
-  }
+    display: flex;
+    height: 100px;
+    justify-content: initial;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+
