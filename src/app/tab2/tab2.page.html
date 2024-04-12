@@ -3,39 +3,22 @@
   <main>
     <h2 id="tlo">Disponible</h2>
    
-    <section id="info-barberos">
-        <div class="tarjeta-barbero">
+    <section id="info-barberos" >
+        <div class="tarjeta-barbero" *ngFor="let barberia of barberias; let i = index">
 
             <figure class="contenedor-img-barbero">
                 <img class="img-barbero" src="../../assets/img/icono-usuario.png" alt="icono usuario">
             </figure>
 
-            <div class="contenedor-datos-barbero">
-                <p class="nom-barbero">BarberLocate</p>
+            <div class="contenedor-datos-barbero" >
+                <p class="nom-barbero">{{barberia.nom_barberia}}</p>
 
-                <button class="btn-actividad-barbero" type="button">Agendar cita</button>
+                <button routerLink="/escoger" class="btn-actividad-barbero" type="button" >Agendar cita</button>
 
                 <button class="btn-ubicacion-barbero" type="button">ver ubicación</button>
             </div>
            
         </div>
-
-        <div class="tarjeta-barbero">
-
-            <figure class="contenedor-img-barbero">
-                <img class="img-barbero" src="../../assets/img/icono-usuario.png" alt="icono usuario">
-            </figure>
-
-            <div class="contenedor-datos-barbero">
-                <p class="nom-barbero">Barberia valhala</p>
-                <button class="btn-actividad-barbero" type="button">Agendar cita</button>
-                <button class="btn-ubicacion-barbero" type="button">ver ubicación</button>
-            </div>
-
-          
-
-        </div>
-        
     </section>
    
 </main>

@@ -16,15 +16,8 @@ export class ConexionService {
     .post(this.url+'/restaurarContrasena', JSON.stringify(data))
   }
 
-  
-  obtenerBarberia() :Observable<any>{
-    return this.http.get(this.url+'/Barberia${}')
- }
 
- obtenerBarbero() {
-  return this.http.get(this.url+'/Barberos${}')
-}
+  }
 
-}
 
 
